@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  auth0:
+    build:
+      context: ./02-Calling-an-API
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/app:cached
